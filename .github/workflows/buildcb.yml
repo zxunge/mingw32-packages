@@ -22,7 +22,16 @@ jobs:
         id: buildcb
         run: |
           pacman -Syy
-          pacman -S --noconfirm mingw-w64-i686-toolchain
+          pacman -S --noconfirm mingw-w64-i686-toolchain   \
+            mingw-w64-i686-drmingw                         \
+            mingw-w64-i686-hunspell                        \
+            mingw-w64-i686-wxwidgets3.2-msw-libs           \
+            mingw-w64-i686-autotools                       \
+            mingw-w64-i686-wxwidgets3.2-msw                \
+            mingw-w64-i686-wxwidgets3.2-msw-cb_headers     \
+            mingw-w64-i686-boost                           \
+            zip                                            \
+            subversion              
           cd mingw-w64-codeblocks
           MINGW_ARCH=mingw32 makepkg-mingw -sLf
           pacman -U mingw-w64-codeblocks*.pkg.tar.xz
