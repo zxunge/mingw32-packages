@@ -30,7 +30,8 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-cc"
              "zip"
              "subversion")
 source=("$_realname::svn+https://svn.code.sf.net/p/codeblocks/code/trunk#revision=$_revision"
-        "004-disable-parallel-make-for-SmartIndent.patch")
+        "004-disable-parallel-make-for-SmartIndent.patch"
+        "002-fix-32bit-build.patch")
 sha256sums=('SKIP'
             '4dff5050d2fad37fe29cef40b354c39f70526f0ece3aa895b2e07885cc647089')
 
