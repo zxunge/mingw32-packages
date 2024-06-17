@@ -47,6 +47,7 @@ prepare() {
   cd "${_realname}"
   apply_patch_with_msg \
     004-disable-parallel-make-for-SmartIndent.patch
+    002-fix-32bit-build.patch
 
   ./bootstrap
 }
