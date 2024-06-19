@@ -16,6 +16,8 @@ jobs:
         with:
           msystem: clang32
           update: true
+          install: >-
+            binutils
 
       - name: build CodeBlocks
         shell: msys2 {0}
