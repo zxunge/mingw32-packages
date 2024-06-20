@@ -9,7 +9,7 @@ pkgdesc='oneAPI Threading Building Blocks (mingw-w64)'
 arch=(any)
 mingw_arch=('mingw64' 'ucrt64' 'clang64' 'clangarm64' 'clang32')
 url='https://software.intel.com/en-us/oneapi/onetbb'
-msys2_repository_url="https://bgithub.xyz/oneapi-src/oneTBB"
+msys2_repository_url="https://github.com/oneapi-src/oneTBB"
 msys2_references=(
   "cpe: cpe:2.3:a:intel:threading_building_blocks"
 )
@@ -22,7 +22,7 @@ depends=("${MINGW_PACKAGE_PREFIX}-gcc-libs"
 #makedepends=("${MINGW_PACKAGE_PREFIX}-cc"
 makedepends=("${MINGW_PACKAGE_PREFIX}-cmake"
              "${MINGW_PACKAGE_PREFIX}-ninja")
-source=("https://bgithub.xyz/oneapi-src/${_realname}/archive/v${pkgver}/${_realname}-${pkgver}.tar.gz"
+source=("https://github.com/oneapi-src/${_realname}/archive/v${pkgver}/${_realname}-${pkgver}.tar.gz"
         001-fix-using-TBB-with-Debug-build-type.patch
         002-fix-link-flags-on-mingw.patch)
 sha256sums=('c7bb7aa69c254d91b8f0041a71c5bcc3936acb64408a1719aec0b2b7639dd84f'
