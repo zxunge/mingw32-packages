@@ -17,6 +17,7 @@ jobs:
           msystem: clang32
           update: true
           install: >-
+            patch
             binutils
             mingw-w64-clang-i686-cmake
             mingw-w64-clang-i686-ninja
