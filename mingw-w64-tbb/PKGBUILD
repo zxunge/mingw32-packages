@@ -59,6 +59,7 @@ build() {
     -GNinja \
     -DCMAKE_INSTALL_PREFIX=${MINGW_PREFIX} \
     "${_extra_config[@]}" \
+    -DCMAKE_CXX_COMPILER=clang++
     -DTBB_TEST=OFF \
     -DTBB_STRICT=OFF \
     -DBUILD_SHARED_LIBS=ON \
