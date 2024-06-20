@@ -22,14 +22,6 @@ jobs:
             mingw-w64-clang-i686-ninja
             mingw-w64-clang-i686-hwloc
 
-      - name: build mold
-        shell: msys2 {0}
-        id: buildmold
-        run: |
-          cd mingw-w64-mold
-          MINGW_ARCH=clang32 makepkg-mingw -sLf
-          pacman -U mingw-w64-mold*.pkg.tar.xz
-
       - name: build tbb
         shell: msys2 {0}
         id: buildtbb
@@ -37,3 +29,11 @@ jobs:
           cd mingw-w64-tbb
           MINGW_ARCH=clang32 makepkg-mingw -sLf
           pacman -U mingw-w64-tbb*.pkg.tar.xz
+     
+      - name: build mold
+        shell: msys2 {0}
+        id: buildmold
+        run: |
+          cd mingw-w64-mold
+          MINGW_ARCH=clang32 makepkg-mingw -sLf
+          pacman -U mingw-w64-mold*.pkg.tar.xz
