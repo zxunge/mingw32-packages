@@ -27,6 +27,7 @@ jobs:
         shell: msys2 {0}
         id: buildtbb
         run: |
+          export CMAKE_CXX_COMPILER=clang++
           cd mingw-w64-tbb
           MINGW_ARCH=clang32 makepkg-mingw -sLf
           pacman -U mingw-w64-tbb*.pkg.tar.xz
