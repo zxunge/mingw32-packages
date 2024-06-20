@@ -18,6 +18,8 @@ jobs:
           update: true
           install: >-
             binutils
+            mingw-w64-clang-i686-cmake
+            mingw-w64-clang-i686-ninja
 
       - name: build CodeBlocks
         shell: msys2 {0}
