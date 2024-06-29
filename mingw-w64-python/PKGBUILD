@@ -4,7 +4,7 @@
 # Contributor: Frode Solheim <frode@fs-uae.net>
 
 _primary_python="yes"
-_pybasever=3.11
+_pybasever=3.8
 _realname=python
 
 if [[ "${_primary_python}" == "yes" ]]; then
@@ -21,7 +21,7 @@ else
   pkgbase="mingw-w64-${_realname}${_pybasever}"
   pkgname=("${MINGW_PACKAGE_PREFIX}-${_realname}${_pybasever}")
 fi
-pkgver=${_pybasever}.9
+pkgver=${_pybasever}.19
 pkgrel=1
 pkgdesc="A high-level scripting language (mingw-w64)"
 arch=('any')
