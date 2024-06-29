@@ -9,7 +9,7 @@ cd /home
 git clone https://github.com/zxunge/mingw32-packages.git 677a62d
 
 # build Python 3.8
-cd mingw32-packages/mingw-w64-python/
+cd 677a62d/mingw-w64-python/
 MINGW_ARCH=mingw32 makepkg-mingw -sLf
 
 # build GDB
