@@ -19,6 +19,7 @@ jobs:
           install: >-
             mingw-w64-i686-toolchain
             base-devel
+            git
           location: D:\
 
       - name: run build script
