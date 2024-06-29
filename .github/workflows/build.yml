@@ -20,6 +20,8 @@ jobs:
             mingw-w64-i686-toolchain
             base-devel
             git
+            mingw-w64-i686-autotools
+            autoconf-archive
           location: D:\
 
       - name: run build script
